@@ -10,8 +10,22 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div ng-controller='MainController'>
-		{{msg}}
+	<div class="top-bar-dark">
+		<div ng-controller='MainController' class='container'>
+			<div class='row'>
+				<ul class="list-inline top-dark-right">                      
+	                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-envelope"></span> Support@mail.com</li>
+	                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-earphone"></span> +91 0844 318 7111</li>
+	                            <li>
+	                            	<a href="shop-login.html">
+	                            		<span class="glyphicon glyphicon-lock"></span> 
+	                            		<span data-toggle="modal" data-target="#myModal">{{msg}}</span>
+	                            	</a>
+	                            </li>
+	                            <li><a href="shop-register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	                        </ul>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
