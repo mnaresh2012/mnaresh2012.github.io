@@ -1,2 +1,22 @@
-.top-bar-dark {background: #000; color: #fff; height: 50px; padding-top: 15px;}
-.mainContainer {background-color: #1d9d74; height: 650px;}
+.top-bar-dark {
+  background: #000;
+  color: #fff;
+  height: 50px;
+  padding-top: 15px;
+}
+.mainContainer {
+  background-color: #1d9d74;
+  height: 650px;
+}
+.mainContainer .authorImg img {
+  border-radius: 100px;
+  border: solid white 2px;
+  box-shadow: 2px 2px 3px #000;
+  text-align: center;
+}
+.mainContainer .container .row {
+  margin-top: 50px;
+}
+.mainContainer .container h1, .mainContainer .container h4 {
+  text-align: center; color: #fff;
+}
