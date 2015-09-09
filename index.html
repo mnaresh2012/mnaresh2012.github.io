@@ -2,7 +2,7 @@
 <html ng-app='myApp'>
 <meta charset='utf-8'>
 <head>
-	<title>angular Experiment</title>
+	<title>{{app.title}}</title>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -26,8 +26,8 @@
 				
 				<div class='col-lg-4 pull-right'>
 					<ul class="list-inline">                      
-		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-envelope"></span> mnaresh2010@aol.com</li>
-		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-earphone"></span> +91 900 801 8384</li>
+		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-envelope"></span>{{app.email}}</li>
+		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-earphone"></span>{{app.phone}}</li>
 		                        </ul>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 	<div class='mainContainer'>
 		<div class='container'>
 			<div class='row'>
-				<h1 class='topHeading' style='color: white; text-align-center;'>mr. naresh kumar</h1>
+				<h2 class='topHeading' style='color: white; text-align-center;'>mr. naresh kumar</h2>
 				<h4 style='color: white; text-align-center;'>UI Developer</h4>	
 			</div>
 		</div>
