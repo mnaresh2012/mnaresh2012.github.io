@@ -13,7 +13,7 @@ App.controller('MainController', function ($scope) {
 App.controller('MainContentController', function ($scope) {
   $scope.appData = {
     name: 'mr. naresh kumar',
-    occupation: 'UI/UX Developer',
-    description: 'UI/UX Developer with a passion for designing beautiful and functional user experiences. Minimalist who believes that less is more.'
+    occupation: 'UI / UX Developer',
+    description: 'UI / UX Developer with a passion for designing beautiful and functional user experiences. Minimalist who believes that less is more.'
   }
 });
