@@ -9,3 +9,10 @@ App.controller('MainController', function ($scope) {
     phone: '+91 900 801 8384'
   };
 });
+
+App.controller('MainContentController', function ($scope) {
+  $scope.app = {
+    name: 'mr. naresh kumar',
+    occupation: 'UI Developer'
+  }
+});
