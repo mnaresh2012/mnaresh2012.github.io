@@ -29,3 +29,13 @@
 .mainContainer .container h1, .mainContainer .container h4 {
   text-align: center; color: #fff;
 }
+.headingStyle {
+  color: #CEF0D4;
+  font-family: "Rouge Script",cursive;
+  font-size: 130px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0px 0px 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #082B34;
+}
