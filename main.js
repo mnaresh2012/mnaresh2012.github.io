@@ -11,7 +11,7 @@ App.controller('MainController', function ($scope) {
 });
 
 App.controller('MainContentController', function ($scope) {
-  $scope.app = {
+  $scope.appData = {
     name: 'mr. naresh kumar',
     occupation: 'UI Developer'
   }
