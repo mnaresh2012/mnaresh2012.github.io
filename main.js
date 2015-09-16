@@ -16,5 +16,35 @@ App.controller('MainContentController', function ($scope) {
     authorImg: 'https://avatars3.githubusercontent.com/u/3023566?v=3&amp;s=460',
     occupation: 'UI / UX Developer',
     description: 'UI / UX Developer with a passion for designing beautiful and functional user experiences. Minimalist who believes that less is more.'
+    technology: {
+      rowOne: {
+        js: 'javaScript',
+        jq: 'jQuery',
+        backbone: 'Backbone.js',
+        angular: 'angular.js',
+        d3: 'D3.js',
+        easel: 'easel.js'
+      },
+      rowTwo: {
+        html: 'HTML / HTML5',
+        css: 'CSS / CSS3',
+        ls: 'LESS / SASS',
+        hb: 'Handlebar.js',
+        mu: 'Mustache.js'
+      },
+      rowThree: {
+        ap: 'Adobe Photoshop',
+        ai: 'Adobe Illustrator',
+        as3: 'Actionscript  3.0',
+        flash: 'Adobe Flash',
+        underscore: 'underscore.js'
+      },
+      rowFour: {
+        grunt: 'Grunt.js / Gulp.js',
+        require: 'require.js',
+        teamcity: 'Teamcity',
+        ud: 'uDeploy'
+      }
+    }
   }
 });
