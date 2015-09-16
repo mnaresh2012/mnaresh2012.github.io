@@ -15,7 +15,6 @@
   background: -ms-linear-gradient(top,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-  height: 650px;
 }
 .mainContainer .authorImg img {
   border-radius: 100px;
