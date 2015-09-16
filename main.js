@@ -15,7 +15,7 @@ App.controller('MainContentController', function ($scope) {
     name: 'mr. naresh kumar',
     authorImg: 'https://avatars3.githubusercontent.com/u/3023566?v=3&amp;s=460',
     occupation: 'UI / UX Developer',
-    description: 'UI / UX Developer with a passion for designing beautiful and functional user experiences. Minimalist who believes that less is more.'
+    description: 'UI / UX Developer with a passion for designing beautiful and functional user experiences. Minimalist who believes that less is more.',
     technology: {
       rowOne: {
         js: 'javaScript',
