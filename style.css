@@ -45,5 +45,5 @@
 .technology {color: #fff; margin: 75px 0 120px 0;}
 .technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {width: 650px; text-align: center; margin: 12px auto 12px auto;}
 .technology p span { padding: 8px; background-color: #1E5799; display: inline-block; border-radius: 5px;}
-.divider {width: 245px; display: block; margin: 0 auto; border-bottom: dashed #fff thin; box-shadow: 3px 3px 2px #abc;}
+.divider {width: 245px; display: block; margin: 0 auto; border-bottom: dashed #fff thin; box-shadow: 3px 3px 2px #fff;}
 .footerArea p {text-align: center;}
