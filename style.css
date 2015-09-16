@@ -42,7 +42,7 @@
   height: 90px;
 }
 #author {display: block; margin: 0 auto; border-radius: 245px; box-shadow: 3px 3px 3px #000;}
-.technology {color: #fff; margin: 75px 0 75px 0;}
+.technology {color: #fff; margin: 75px 0 120px 0;}
 .technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {width: 650px; text-align: center; margin: 12px auto 12px auto;}
 .technology p span { padding: 8px; background-color: #1E5799; display: inline-block; border-radius: 5px;}
 .divider {width: 345px; display: block; margin: 0 auto; border: solid #fff thin; height: 25px;}
