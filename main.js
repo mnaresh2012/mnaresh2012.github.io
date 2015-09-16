@@ -19,11 +19,12 @@ App.controller('MainContentController', function ($scope) {
     technology: {
       rowOne: {
         js: 'javaScript',
-        jq: 'jQuery',
+        jq: 'jQuery / jQuery UI / jQuery Mobile',
         backbone: 'Backbone.js',
         angular: 'angular.js',
         d3: 'D3.js',
-        easel: 'easel.js'
+        easel: 'easel.js',
+        bootstrap: 'Bootstrap'
       },
       rowTwo: {
         html: 'HTML / HTML5',
