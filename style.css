@@ -44,4 +44,4 @@
 }
 #author {display: block; margin: 0 auto; border-radius: 245px; box-shadow: 3px 3px 3px #000;}
 .technology {color: #fff;}
-.technology .rowOne {width: 550px; border: solid gray thin; text-align: center; margin: 0 auto;}
+.technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {width: 550px; text-align: center; margin: 0 auto;}
