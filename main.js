@@ -6,7 +6,7 @@ App.controller('MainController', function ($scope) {
     occupation: 'UI Developer',
     email: ' mnaresh2010@aol.com',
     title: 'mr. naresh kumar',
-    phone: '+91 900 801 8384'
+    phone: '+91 97177 02588'
   };
 });
 
