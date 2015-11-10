@@ -1,0 +1,279 @@
+<html>
+<head>
+	<title>MarionetteJS Experiment</title>
+	<script src="_assets/js/_lib/jquery.min.js"></script>
+	<script src="_assets/js/_lib/underscore.min.js"></script>
+	<script src="_assets/js/_lib/backbone.min.js"></script>
+	<script src="_assets/js/_lib/backbone.marionette.min.js"></script>
+
+	<style type="text/css">
+		#myTable {
+			border-collapse: collapse;
+			width: 575px;
+			height: 175px;
+			border: solid gray thin;
+		}
+		#myTable tr th {
+			background-color: #f2f2f2;
+			padding: 5px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+		#myTable tr th p {padding: 0; margin: 0;}
+		#myTable thead {border: solid gray thin;}
+		#myTable thead tr, #myTable tbody tr, #myTable tfoot tr td {
+			text-align: center;
+		}
+		#myTable tfoot tr td:first-child {text-align: right;}
+		#myTable tfoot {background-color: #f2f2f2;}
+		.total {font-weight: bold;}
+		#myTable tbody tr {
+			border-bottom: solid gray thin;
+		}
+		#myTable tbody tr p {padding: 0; margin: 0;}
+		.percent, .percentOne {color: green;}
+		.activeColor {background-color: green;}
+		.normal {background-color: none;}
+	</style>
+</head>
+<body>
+	<div id='container'></div>
+	<div id='wrapper'></div>	
+	
+	<script type="text/html" id='templateOne'>
+		<h3>Gain / Loss</h3>
+		<p>
+			<button id='onBtn' class='normal'>On</button> /
+			<button id='offBtn' class='activeColor'>Off</button>
+		</p>
+		<div id='regionOne'></div>
+	</script>
+
+	<script type="text/html" id='templateTwo'>
+		<table id='myTable'>
+			<thead>
+				<tr>
+					<th>1.Invest Name</th>
+					<th>
+						<p>2.Unit Price</p>
+						<p class='priceChange'>(24hr price)</p>
+					</th>
+					<th>3.Units</th>
+					<th>4.Value</th>
+					<th>5.Cost Basis</th>
+					<th class='gainLossTH'>6.Gain / Loss</th>
+					<th>7.Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p>01</p>
+					</td>
+					<td>
+						<p>02</p>
+						<p class='percent'>2.0%</p>
+					</td>
+					<td>
+						<p>03</p>
+					</td>
+					<td>
+						<p>04</p>
+					</td>
+					<td>
+						<p>05</p>
+					</td>
+					<td class='gainLossTR'>
+						<p>06</p>
+						<p class='percentOne'>2.0%</p>
+					</td>
+					<td>
+						<p>07</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>08</p>
+					</td>
+					<td>
+						<p>09</p>
+						<p class='percent'>7.0%</p>
+					</td>
+					<td>
+						<p>10</p>
+					</td>
+					<td>
+						<p>11</p>
+					</td>
+					<td>
+						<p>12</p>
+					</td>
+					<td class='gainLossTR'>
+						<p>13</p>
+						<p class='percentOne'>2.0%</p>
+					</td>
+					<td>
+						<p>14</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>15</p>
+					</td>
+					<td>
+						<p>16</p>
+						<p class='percent'>1.0%</p>
+					</td>
+					<td>
+						<p>17</p>
+					</td>
+					<td>
+						<p>18</p>
+					</td>
+					<td>
+						<p>19</p>
+					</td>
+					<td class='gainLossTR'>
+						<p>20</p>
+						<p class='percentOne'>2.0%</p>
+					</td>
+					<td>
+						<p>21</p>
+					</td>
+				</tr>
+			</tbody>
+
+			
+
+		</table>
+	</script>
+
+	<script src="_assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+(function(){
+	window.App = {
+		Models: {},
+		Views: {},
+		Collections: {},
+		Regions: new Marionette.Application()
+	};
+
+	//Region
+	App.Regions.addRegions({
+		main: '#container',
+		wrapper: '#wrapper'
+	});
+
+	//Models
+	App.Models.TaskModel = Backbone.Model.extend({
+		defaults: {
+			title: 'some title',
+			priority: 1
+		}
+	});
+
+	//Views
+	App.Views.TaskView = Marionette.LayoutView.extend({
+		template: '#templateOne',
+		ui : {
+			onBtn: '#onBtn',
+			offBtn: '#offBtn',
+			table: '#myTable'
+		},
+		initialize: function () {
+			//this.hideTableData();
+
+		},
+		childEvents: function () {
+			
+		},
+		events: {
+			'click @ui.onBtn': 'onClickOnBtn',
+			'click @ui.offBtn': 'onClickOffBtn'
+		},
+		onClickOnBtn: function (evt) {
+			this.setActiveColor(evt);
+		},
+		onClickOffBtn: function (evt) {
+			this.setActiveColor(evt);
+		},
+		setActiveColor: function (evt) {
+			this.trigger('hideTableContent', evt);
+			///var hasClass = $(evt.currentTarget).hasClass('activeColor');
+			var elID = $(evt.currentTarget).attr('id');
+			var that = this;
+			if(elID === 'onBtn') {
+				this.ui.onBtn.attr('class', '').attr('class', 'activeColor');
+				this.ui.offBtn.attr('class', '').attr('class', 'normal');
+			} else {
+				this.ui.offBtn.attr('class', '').attr('class', 'activeColor');
+				this.ui.onBtn.attr('class', '').attr('class', 'normal');
+			}
+		}
+	});
+
+	var taskModel = new App.Models.TaskModel();
+	var taskView = new App.Views.TaskView({model: taskModel});
+	App.Regions.main.show(taskView);
+
+	//secind level
+	App.Views.TasksLayoutView = Marionette.LayoutView.extend({
+		template: '#templateTwo',
+		initialize: function () {
+			this.listenTo(taskView, "hideTableContent", this.toggleTableData);
+		},
+		onRender: function () {
+			//this.hideTableData();
+		},
+		ui: {
+			table: '#myTable'
+		},
+		toggleTableData: function (el) {
+			//console.log(el.currentTarget);
+			if($(el.currentTarget).attr('id') === 'onBtn') {
+				//console.log('onBtn');
+				this.showTableData();
+			} else {
+				//console.log('offBtn');
+				this.hideTableData();
+			}
+		},
+
+		showTableData: function () {
+			//console.log(this.priceChangeElem);
+			//console.log(this.percentageElem);
+			//console.log(this.gainLossTRElem);
+			//console.log(this.gainLossTHElem);
+
+			var thArray = $(this.ui.table).find('thead tr');
+			//$(this.ui.table).find('thead th:eq(4)').before().append(this.gainLossTHElem);
+			var el = $(this.ui.table).find('thead th');
+			el.splice(el.length -1, 0, this.gainLossTHElem);
+			$(this.ui.table).find('thead').append(el);
+			//console.log(thArray.length);
+
+			//$('#list li:eq(1)').append('<li>Position 3</li>');
+
+		},
+		hideTableData: function () {
+			this.priceChangeElem = $(this.ui.table).find('.priceChange');
+			this.percentageElem = $(this.ui.table).find('.percent');
+			this.gainLossTRElem = $(this.ui.table).find('.gainLossTR');
+			this.gainLossTHElem = $(this.ui.table).find('.gainLossTH');
+
+
+			$(this.priceChangeElem).remove();
+			$(this.percentageElem).remove();
+			$(this.gainLossTRElem).remove();
+			$(this.gainLossTHElem).remove();
+		}
+	});
+
+	var tasksLayoutView = new App.Views.TasksLayoutView();
+	App.Regions.wrapper.show(tasksLayoutView);
+}());
