@@ -12,9 +12,9 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div class='container'>
+	<div class='container-fluid'>
 		<div class='row'>
-			<div class="top-bar-dark">
+			<div class="top-bar-dark col-lg-12 col-sm-12 col-xs-12">
 				<div ng-controller='MainController' class='container'>
 					<div class='row'>
 						<div style='text-align: center;'>
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 			<div class='row'>
-				<div class='mainContainer' ng-controller='MainContentController'>
+				<div class='mainContainer col-lg-12 col-sm-12 col-xs-12' ng-controller='MainContentController'>
 					<br /><br />
 					<img id='author' ng-src='{{appData.authorImg}}' />
 					<h2 class='headingStyle' style='color: white; text-align: center; font-size: 45px;'>{{appData.name}}</h2>
