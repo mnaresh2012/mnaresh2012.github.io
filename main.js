@@ -4,7 +4,7 @@ App.controller('MainController', function ($scope) {
   $scope.app = {
     name: 'mr. naresh kumar',
     occupation: 'UI Developer',
-    email: ' mnaresh2010@aol.com',
+    email: ' naresh8@icloud.com',
     title: 'mr. naresh kumar',
     phone: '+91 97177 02588'
   };
