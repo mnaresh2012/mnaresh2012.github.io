@@ -3,7 +3,7 @@
 <meta charset='utf-8'>
 <head>
 	<title>{{app.title}}</title>
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -12,81 +12,21 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div class="top-bar-dark">
-		<div ng-controller='MainController' class='container'>
-			<div class='row'>
-				
-				<div style='text-align: center;'>
-					<ul class="list-inline">                      
-		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-envelope"></span>{{app.email}}</li>
-		                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-earphone"></span>{{app.phone}}</li>
-		                        </ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class='mainContainer' ng-controller='MainContentController'>
-		<div class='container'>
-			<div class='row'>
-				<br /><br />
-				<img id='author' ng-src='{{appData.authorImg}}' />
-				<h2 class='headingStyle' style='color: white; text-align: center; font-size: 45px;'>{{appData.name}}</h2>
-				<h5 style='color: white; text-align: center;'>{{appData.occupation}}</h5>
-				<p style='color: white; text-align: center; width: 480px; margin: 0 auto;'>{{appData.description}}</p>
-				<br /> <br />
-				<span class='divider'></span>
-				
-				<div class='technology'>
-					<div class='rowOne'>
-						<p>
-							<span>{{appData.technology.rowOne.js}}</span>
-							<span>{{appData.technology.rowOne.backbone}}</span>
-							<span>{{appData.technology.rowOne.angular}}</span>
-							<span>{{appData.technology.rowOne.d3}}</span>
-							<span>{{appData.technology.rowOne.easel}}</span>
-							<span>{{appData.technology.rowOne.bootstrap}}</span>
-						</p>
-					</div>
-					<div class='rowTwo'>
-						<p>
-							<span>{{appData.technology.rowTwo.html}}</span>
-							<span>{{appData.technology.rowOne.jq}}</span>
-							<span>{{appData.technology.rowTwo.css}}</span>
-							<span>{{appData.technology.rowTwo.ls}}</span>
-							<span>{{appData.technology.rowTwo.hb}}</span>
-							<span>{{appData.technology.rowTwo.mu}}</span>
-						</p>
-					</div>
-					<div class='rowThree'>
-						<p>
-							<span>{{appData.technology.rowThree.ap}}</span>
-							<span>{{appData.technology.rowThree.ai}}</span>
-							<span>{{appData.technology.rowThree.as3}}</span>
-							<span>{{appData.technology.rowThree.flash}}</span>
-							<span>{{appData.technology.rowThree.underscore}}</span>
-						</p>
-					</div>
-					<div class='rowFour'>
-						<p>
-							<span>{{appData.technology.rowFour.grunt}}</span>
-							<span>{{appData.technology.rowFour.require}}</span>
-							<span>{{appData.technology.rowFour.teamcity}}</span>
-							<span>{{appData.technology.rowFour.ud}}</span>
-						</p>
+	<div class='container'>
+		<div class='row'>
+			<div class="top-bar-dark">
+				<div ng-controller='MainController' class='container'>
+					<div class='row'>
+						<div style='text-align: center;'>
+							<ul class="list-inline">                      
+				                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-envelope"></span>{{app.email}}</li>
+				                            <li class="hidden-sm hidden-xs"><span class="glyphicon glyphicon-earphone"></span>{{app.phone}}</li>
+				                        </ul>
+						</div>
 					</div>
 				</div>
-				
 			</div>
-		</div>
-	</div>
-	
-	
-	<div class='footerArea'>
-		<div class='container'>
-			<div class='row'>
-				<br />
-				<p style='color: white;'>2016 &copy; copyright | all rights reserved.</p>
-			</div>
+			
 		</div>
 	</div>
 </body>
