@@ -1,8 +1,9 @@
 .top-bar-dark {
-  background: #000;
+  background: #7E8AA2;
   color: #fff;
   height: 50px;
   padding-top: 15px;
+  border-bottom: 1px dashed #fff;
 }
 body {
   padding: 0px;
