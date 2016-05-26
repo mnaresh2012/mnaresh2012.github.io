@@ -11,8 +11,17 @@ body {
 }
 h3 {
   text-align: center;
-  margin: 0px;
+  margin: 0px 0px 15px 0px;
   padding: 0px;
+}
+.headingOne {
+  color: #000;
+}
+.headingTwo {
+  color: #000;
+}
+.headingThree {
+  color: #000;
 }
 .subHeading {
   color: #1E5799;
