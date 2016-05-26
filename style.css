@@ -16,7 +16,7 @@
   background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );*/
   background:url(http://tinyurl.com/hwrc48v);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .mainContainer .authorImg img {
   border-radius: 100px;
