@@ -70,7 +70,7 @@ body {
 .bgFive {background-color: #FFE11A;}
 .bgSix {background-color: #FD7400;}
 .bgSeven {background-color: #FF6138;}
-.bgEight {background-color: #FFFF9D;}
+.bgEight {background-color: #FFFF9D; color: #BEEB9F;}
 .bgNine {background-color: #BEEB9F;}
 .bgTen {background-color: #79BD8F;}
 .bgEleven {background-color: #00A388;}
@@ -80,7 +80,7 @@ body {
 .bgFifteen {background-color: #ACF0F2;}
 .bgSixteen {background-color: #F3FFE2;color: #ECCD44;}
 .bgSeventeen {background-color: #EB7F00;}
-.bgEighteen {background-color: #7E8AA2; color: #7E8AA2;}
+.bgEighteen {background-color: #7E8AA2;}
 .bgNineteen {background-color: #F6E497;}
 .bgTwenty {background-color: #263248;}
 .bgTwentyOne {background-color: #FF9800;}
