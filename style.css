@@ -4,6 +4,11 @@
   height: 50px;
   padding-top: 15px;
 }
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #1E5799;
+}
 .topHeading {font-size: 60px;}
 .mainContainer {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
@@ -31,7 +36,7 @@
   text-align: center; color: #fff;
 }
 .headingStyle {
-  color: #CEF0D4;
+  color: #F95BDE;
   font-size: 130px;
   font-weight: normal;
   text-align: center;
