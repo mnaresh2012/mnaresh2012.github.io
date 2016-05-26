@@ -7,9 +7,8 @@
 body {
   padding: 0px;
   margin: 0px;
-  color: #1E5799;
 }
-p {
+.description {
   color: #1E5799;
 }
 .topHeading {font-size: 60px;}
