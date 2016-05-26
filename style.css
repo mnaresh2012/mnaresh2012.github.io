@@ -9,6 +9,9 @@ body {
   margin: 0px;
   color: #1E5799;
 }
+p {
+  color: #1E5799;
+}
 .topHeading {font-size: 60px;}
 .mainContainer {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
