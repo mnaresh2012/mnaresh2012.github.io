@@ -78,9 +78,9 @@ body {
 .bgThirteen {background-color: #225378;}
 .bgFourteen {background-color: #1695A3;}
 .bgFifteen {background-color: #ACF0F2;}
-.bgSixteen {background-color: #F3FFE2;}
+.bgSixteen {background-color: #F3FFE2;color: #ECCD44;}
 .bgSeventeen {background-color: #EB7F00;}
-.bgOne {background-color: #263248;}
-.bgEighteen {background-color: #7E8AA2;}
+.bgEighteen {background-color: #7E8AA2; color: #7E8AA2;}
 .bgNineteen {background-color: #F6E497;}
+.bgTwenty {background-color: #263248;}
 .bgTwentyOne {background-color: #FF9800;}
