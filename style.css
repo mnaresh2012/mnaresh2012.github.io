@@ -54,7 +54,14 @@ body {
 .technology {color: #fff; margin: 45px 0 120px 0;}
 .technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {text-align: center; margin: 12px auto 12px auto;}
 .technology p span { padding: 8px; display: inline-block; border-radius: 5px;}
-.divider {width: 108px; display: block; margin: 0 auto; border-bottom: dashed #fff thin;}
+.divider {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px dashed #fff;
+}
 .footerArea p {text-align: center;}
 .bgOne {background-color: #004358;}
 .bgTwo {background-color: #1F8A70;}
