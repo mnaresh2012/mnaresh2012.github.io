@@ -66,7 +66,7 @@ h3 {
   height: 60px;
 }
 #author {display: block; margin: 0 auto; border-radius: 245px; box-shadow: 3px 3px 3px #000;}
-.technology {color: #fff; margin: 25px 0 50px 0;}
+.technology {color: #fff; margin: 25px 0 25px 0;}
 .technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {text-align: center; margin: 12px auto 12px auto;}
 .technology p span { padding: 8px; display: inline-block; border-radius: 5px;}
 .divider {
