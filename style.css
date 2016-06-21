@@ -38,6 +38,8 @@
 }
 .aboutMe p {
     font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
 }
 .socialIcons i {
     margin: 0px 10px;
