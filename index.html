@@ -7,20 +7,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
-	<script src="main.js"></script>
 </head>
 <body>
 	<div class='container-fluid'>
 		<div class='row'>
-			<div class="top-bar-dark col-lg-12 col-sm-12 col-xs-12">
-				<div ng-controller='MainController' class='container'>
+			<div class="top-bar-dark">
+				<div class='container'>
 					<div class='row'>
 						<div style='text-align: center;'>
 							<ul class="list-inline">                      
-				                            <li><span class="glyphicon glyphicon-envelope"></span>{{app.email}}</li>
-				                            <li><span class="glyphicon glyphicon-earphone"></span>{{app.phone}}</li>
+				                            <li><span class="glyphicon glyphicon-envelope"></span>naresh8@icloud.com</li>
+				                            <li><span class="glyphicon glyphicon-earphone"></span> 90080 18384</li>
 				                        </ul>
 						</div>
 					</div>
@@ -29,79 +26,12 @@
 		</div>
 		
 		<div class='row'>
-			<div class='mainContainer col-lg-12 col-sm-12 col-xs-12' ng-controller='MainContentController'>
-				<br /><br />
-				<img id='author' ng-src='{{appData.authorImg}}' />
-				<h2 class='headingStyle' style='text-align: center; font-size: 45px;'>{{appData.name}}</h2>
-				<h5 class='subHeading' style='text-align: center;'>{{appData.occupation}}</h5>
-				<p class='subHeading' style='text-align: center; margin: 0 auto;'>{{appData.description}}</p>
-				<br />
-				<span class='divider'></span>
-				
-				<div class='technology'>
-					<h3 class='titleHeading'>Technology I used - </h3>
-					<div class='rowOne'>
-						<p>
-							<span class='bgOne'>{{appData.technology.rowOne.js}}</span>
-							<span class='bgTwo'>{{appData.technology.rowOne.backbone}}</span>
-							<span class='bgThree'>{{appData.technology.rowOne.angular}}</span>
-							<span class='bgFour'>{{appData.technology.rowOne.d3}}</span>
-							<span class='bgFive'>{{appData.technology.rowOne.easel}}</span>
-							<span class='bgSix'>{{appData.technology.rowOne.bootstrap}}</span>
-						</p>
-					</div>
-					<div class='rowTwo'>
-						<p>
-							<span class='bgSeven'>{{appData.technology.rowTwo.html}}</span>
-							<span class='bgEight'>{{appData.technology.rowOne.jq}}</span>
-							<span class='bgNine'>{{appData.technology.rowTwo.css}}</span>
-							<span class='bgTen'>{{appData.technology.rowTwo.ls}}</span>
-							<span class='bgEleven'>{{appData.technology.rowTwo.hb}}</span>
-							<span class='bgTwelve'>{{appData.technology.rowTwo.mu}}</span>
-						</p>
-					</div>
-					<div class='rowThree'>
-						<p>
-							<span class='bgThirteen'>{{appData.technology.rowThree.ap}}</span>
-							<span class='bgFourteen'>{{appData.technology.rowThree.ai}}</span>
-							<span class='bgFifteen'>{{appData.technology.rowThree.as3}}</span>
-							<span class='bgSixteen'>{{appData.technology.rowThree.flash}}</span>
-							<span class='bgSeventeen'>{{appData.technology.rowThree.underscore}}</span>
-						</p>
-					</div>
-					<div class='rowFour'>
-						<p>
-							<span class='bgEighteen'>{{appData.technology.rowFour.grunt}}</span>
-							<span class='bgNineteen'>{{appData.technology.rowFour.require}}</span>
-							<span class='bgTwenty'>{{appData.technology.rowFour.teamcity}}</span>
-							<span class='bgTwentyOne'>{{appData.technology.rowFour.ud}}</span>
-						</p>
-					</div>
-				</div>
-				<div class='plugins titleHeading'>
-					<br />
-					<span class='divider'></span>
-					<br />
-					<h3>Plugins:</h3>
-				</div>
-				
-				<div class='Other Blogs titleHeading'>
-					<br />
-					<span class='divider'></span>
-					<br />
-					<h3>Other Blogs:</h3>
-					<div class='social-images'>
-						<img src='' />
-						<img src='' />
-						<img src='' />
-					</div>
-				</div>
-			</div>
+		
 		</div>
 		
-		<div class='footerArea row'>
-			<p style='color: white; margin-top: 20px;'>2016 &copy; copyright | all rights reserved.</p>
-		</div>
+		<footer class='row'>
+			
+		</footer>
 	</div>
 </body>
 </html>
