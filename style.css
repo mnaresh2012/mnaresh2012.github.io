@@ -64,3 +64,6 @@
     color: #000;
     text-align: center;
 }
+.navbar {
+    margin-bottom: 0px !important;
+}
