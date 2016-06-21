@@ -43,3 +43,10 @@
     margin: 0px 10px;
     color: #f2d1b7;
 }
+.footer-bottom {
+    height: 75px;
+    background-color: #000;
+}
+.footer-bottom p {
+    color: #fff;
+}
