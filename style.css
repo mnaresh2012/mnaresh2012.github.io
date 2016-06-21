@@ -1,5 +1,10 @@
 .bgImage {
-    background-image: url(http://tinyurl.com/h9c45rp);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6e6fb+0,eaf6f6+44,f8f5d2+100 */
+    background: #c6e6fb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c6e6fb 0%, #eaf6f6 44%, #f8f5d2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c6e6fb 0%,#eaf6f6 44%,#f8f5d2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c6e6fb 0%,#eaf6f6 44%,#f8f5d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e6fb', endColorstr='#f8f5d2',GradientType=0 ); /* IE6-9 */
 }
 .profile {
     text-align: center;
