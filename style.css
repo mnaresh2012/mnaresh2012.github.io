@@ -1,4 +1,5 @@
 .bgImage {
+    padding-bottom: 45px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6e6fb+0,eaf6f6+44,f8f5d2+100 */
     background: #c6e6fb; /* Old browsers */
     background: -moz-linear-gradient(top,  #c6e6fb 0%, #eaf6f6 44%, #f8f5d2 100%); /* FF3.6-15 */
@@ -16,4 +17,11 @@
     border-radius: 100px;
     border: solid white 2px;
     box-shadow: 2px 2px 3px #000;
+}
+.profile h2 {
+    font-size: 55px;
+    color: #FFCF4E;
+}
+.profile h4 {
+     font-size: 15px;
 }
