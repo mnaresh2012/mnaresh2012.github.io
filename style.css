@@ -26,3 +26,12 @@
      font-size: 17px;
      color: #a94442;
 }
+.aboutMe {
+    text-align: center;
+}
+.aboutMe h3 {
+    color: #337ab7;
+}
+.aboutMe p {
+    font-size: 17px;
+}
