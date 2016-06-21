@@ -1,104 +1,24 @@
-.top-bar-dark {
-  background: #7E8AA2;
-  color: #fff;
-  height: 50px;
-  padding-top: 15px;
-  border-bottom: 1px dashed #fff;
+.site-footer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    line-height: 110%;
+    margin: 0 auto;
+    width: 100%;
+    color: #999;
 }
-body {
-  padding: 0px;
-  margin: 0px;
+
+.site-footer .bottom-info {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0;
+    border: 0px solid #24a1c3;
 }
-h3 {
-  text-align: center;
-  margin: 0px 0px 15px 0px;
-  padding: 0px;
+.site-footer .bottom-info .credits {
+    width: 60%;
 }
-.headingOne {
-  color: #000;
+.site-footer .bottom-info .author-info {
+    float: left;
+    width: 40%;
 }
-.headingTwo {
-  color: #000;
-}
-.titleHeading {
-  color: #1e5799;
-}
-.headingThree {
-  color: #000;
-}
-.subHeading {
-  color: #1E5799;
-}
-.topHeading {font-size: 60px;}
-.mainContainer {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
-  /*background: #1e5799;
-  background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
-  background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
-  background: -o-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
-  background: -ms-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
-  background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );*/
-  background:url(http://tinyurl.com/jrz45ce);
-  background-repeat: repeat;
-}
-.mainContainer .authorImg img {
-  border-radius: 100px;
-  border: solid white 2px;
-  box-shadow: 2px 2px 3px #000;
-  text-align: center;
-}
-.mainContainer .container .row {
-  margin-top: 60px;
-}
-.mainContainer .container h1, .mainContainer .container h4 {
-  text-align: center; color: #fff;
-}
-.headingStyle {
-  color: #FF9800;
-  font-size: 130px;
-  font-weight: normal;
-  text-align: center;
-  text-shadow: 3px 3px 2px #082B34;
-}
-.footerArea {
-  background-color: #1e5799;
-  border-top: dashed 1px #fff;
-  color: #fff;
-  height: 60px;
-}
-#author {display: block; margin: 0 auto; border-radius: 245px; box-shadow: 3px 3px 3px #000;}
-.technology {color: #fff; margin: 25px 0 25px 0;}
-.technology .rowOne, .technology .rowTwo, .technology .rowThree, .technology .rowFour {text-align: center; margin: 12px auto 12px auto;}
-.technology p span { padding: 8px; display: inline-block; border-radius: 5px;}
-.divider {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px dashed #fff;
-}
-.footerArea p {text-align: center;}
-.bgOne {background-color: #004358;}
-.bgTwo {background-color: #1F8A70;}
-.bgThree {background-color: #BEDB39;}
-.bgFour {background-color: #8BC540;}
-.bgFive {background-color: #FFE11A;}
-.bgSix {background-color: #FD7400;}
-.bgSeven {background-color: #FF6138;}
-.bgEight {background-color: #FFFF9D; color: #529C1E;}
-.bgNine {background-color: #BEEB9F;}
-.bgTen {background-color: #79BD8F;}
-.bgEleven {background-color: #00A388;}
-.bgTwelve {background-color: #1F8A70;}
-.bgThirteen {background-color: #225378;}
-.bgFourteen {background-color: #1695A3;}
-.bgFifteen {background-color: #ACF0F2;}
-.bgSixteen {background-color: #F3FFE2;color: #ECCD44;}
-.bgSeventeen {background-color: #EB7F00;}
-.bgEighteen {background-color: #7E8AA2;}
-.bgNineteen {background-color: #F6E497;}
-.bgTwenty {background-color: #263248;}
-.bgTwentyOne {background-color: #FF9800;}
