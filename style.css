@@ -45,7 +45,11 @@
 }
 .footer-bottom {
     height: 75px;
-    background-color: #000;
+    background-color: #1fa67a;
+    border-top: 1px solid #1b926c;
+    color: #a5d8c7;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    margin-top: 60px;
 }
 .footer-bottom p {
     color: #fff;
