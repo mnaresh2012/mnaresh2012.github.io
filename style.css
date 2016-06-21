@@ -41,6 +41,9 @@
     width: 60%;
     margin: 0 auto;
 }
+.what-I-Do {
+    margin-top: 45px;
+}
 .socialIcons i {
     margin: 0px 10px;
     color: #f2d1b7;
@@ -63,6 +66,11 @@
     background-color: #c6e6fb;
     color: #000;
     text-align: center;
+    border: 0px;
+    paddin-top: 10px;
+}
+.navbar-inverse i {
+    marhin: 0px 10px;
 }
 .navbar {
     margin-bottom: 0px !important;
