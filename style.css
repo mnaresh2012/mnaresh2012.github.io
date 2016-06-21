@@ -33,6 +33,13 @@
 .aboutMe h3 {
     color: #337ab7;
 }
+.profile p {
+    margin: 15px 0 10px 0;
+}
 .aboutMe p {
     font-size: 17px;
+}
+.socialIcons i {
+    margin: 0px 10px;
+    color: #f2e4d9;
 }
